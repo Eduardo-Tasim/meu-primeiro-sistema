@@ -7,12 +7,14 @@ public class Sistema {
         System.out.println("Iniciando sistema...");
 
         Carro meuCarro = new Carro();
-        meuCarro.modelo = "Fusca";
-        meuCarro.cor = "Azul";
+        meuCarro.setModelo("Fusca");
+        meuCarro.setCor("Azul");
+        meuCarro.setVelocidade(-500);
 
         Carro meuCarro2 = new Carro();
-        meuCarro2.modelo = "Mobi";
-        meuCarro2.cor = "Vermelho";
+        meuCarro2.setModelo("Mobi");
+        meuCarro2.setCor("Vermelho");
+        meuCarro2.setVelocidade(320);
 
         meuCarro.buzinar();
         meuCarro2.buzinar();
